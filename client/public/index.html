@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PJ64GHQX6P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PJ64GHQX6P', {
+    'linker': {
+      'accept_incoming': true,
+      'domains': ['springdesignsoftware.org','odop.springdesignsoftware.org']
+    }
+  });
+</script>
+<!-- Global site tag (gtag.js) - Google Ads: 659158420 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-659158420"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-659158420');
+</script>
+<script>
+  window.addEventListener('load',function(){
+    if(jQuery('.okta-form-title.o-form-head').is(':visible')){
+      gtag('event', 'conversion', {'send_to': 'AW-659158420/fPTOCOiopNQBEJTrp7oC'});
+    }
+  })
+</script>
+<script src="https://kit.fontawesome.com/02372b2b56.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Open Design Optimization Platform</title>
+    <!-- 
+    Add style for "Can I hide the HTML5 number input's spin box?"
+    From: https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box
+    -->
+    <style>
+/**************************************************/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+/**************************************************/
+.text-low-danger {
+  color: #fd7e14 !important;
+}
+.border-low-danger {
+  border-color: #fd7e14 !important;
+}
+/**************************************************/
+.text-strictly-feasible {
+  color: #343a40 !important;
+}
+.text-feasible {
+  color: #28a745 !important;
+}
+.text-close-to-feasible {
+  color: #fd7e14 !important;
+  font-weight: bold !important;
+}
+.text-not-feasible {
+  color: #dc3545 !important;
+  font-weight: bold !important;
+}
+.text-feasibility-undefined {
+  color: #8b299e !important;
+  font-weight: bold !important;
+}
+.text-alert-info {
+  font-style: italic !important;
+}
+.text-alert-notice {
+}
+.text-alert-warn {
+  font-weight: bold !important;
+  font-style: italic !important;
+}
+.text-alert-err {
+  font-weight: bold !important;
+}
+.borders-fixed {
+  border-left-color: #495057 !important;
+  border-left-width: 4px !important;
+  border-right-color: #495057 !important;
+  border-right-width: 4px !important;
+}
+.borders-constrained-min {
+  border-left-color: #495057 !important;
+  border-left-width: 2px !important;
+}
+.borders-constrained-max {
+  border-right-color: #495057 !important;
+  border-right-width: 2px !important;
+}
+.borders-invalid {
+  border-color: #FF0000 !important;
+}
+.background-white {
+  background-color: #ffffff !important;
+}
+.input-group i {
+  position: absolute;
+}
+.icon-dependent {
+  z-index:4;
+  margin: 6px 6px 6px 6px;
+  color: rgba(0,0,0,.4);
+  font-size: .5em;
+}
+.icon-invalid {
+  z-index:4;
+  margin: 18px 6px 4px 3px;
+  font-size: 0.75em;
+}
+/**************************************************/
+table[id^=view] td {
+ text-align: right;
+}    
+/**************************************************/
+.report-table-borders, .report-table-borders td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0px 5px 0px 5px;
+}
+.report-table-borders th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0px 5px 0px 5px;
+  background: #eee;
+}
+.report-table th, .report-table td {
+  padding: 0px 5px 0px 5px;
+  background: #eee;
+}
+/**************************************************/
+.view-table-fixed-2-columns {
+  overflow: auto;
+  max-height: calc(100vh - 210px);
+}
+.view-table-fixed-2-columns table {
+  border-collapse: separate;
+}
+.view-table-fixed-2-columns td:first-child, .view-table-fixed-2-columns th:first-child {
+  position:sticky;
+  left:0;
+  background: #eee;
+  z-index:1;
+}
+.view-table-fixed-2-columns td:nth-child(2), .view-table-fixed-2-columns th:nth-child(2)  { 
+  position:sticky;
+  left:30px;
+  background: #eee;
+  z-index:1;
+}
+.view-table-fixed-2-columns th {
+  position: sticky;
+  top: 0;
+  background: #eee;
+  z-index:2
+}
+.view-table-fixed-2-columns th:first-child, .view-table-fixed-2-columns th:nth-child(2) {
+  z-index:3
+}
+/**************************************************/
+.tooltip-lg > .tooltip-inner {
+  max-width: 400px;
+  text-align: left;
+}
+/**************************************************/
+    </style>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

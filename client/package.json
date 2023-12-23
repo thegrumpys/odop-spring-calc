@@ -1,0 +1,53 @@
+{
+  "name": "odop-client",
+  "version": "0.1.0",
+  "description": "Open Design Optimization Platform (ODOP) Client",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "coverage": "react-scripts test --env=jsdom --coverage",
+    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegrumpys/odop.git"
+  },
+  "author": "thegrumpys",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thegrumpys/odop/issues"
+  },
+  "homepage": "https://odop.heroku.com/",
+  "dependencies": {
+    "@mars/heroku-js-runtime-env": "^3.0.2",
+    "@okta/okta-auth-js": "^4.2.0",
+    "@okta/okta-react": "^4.0.0",
+    "@okta/okta-signin-widget": "^5.0.2",
+    "@types/react-router-dom": "^5.1.6",
+    "bootstrap": "^4.5.3",
+    "eventemitter3": "^4.0.7",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "query-string": "^6.14.0",
+    "react": "^16.14.0",
+    "react-beforeunload": "^2.4.0",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^16.14.0",
+    "react-redux": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^2.0.5",
+    "redux": "^4.0.5",
+    "source-map-explorer": "^2.5.1",
+    "typescript": "^3.9.7"
+  },
+  "proxy": "http://localhost:5000",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
